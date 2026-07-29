@@ -7,6 +7,10 @@ terraform {
     }
 }
 
+provider "aws" {
+    region = "us-east-1"
+}
+
 resource "aws_s3_bucket" "myBucket" {
     region ="us-east-1"
     bucket ="venkatasaivinay-s3-bucket"
