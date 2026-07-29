@@ -1,4 +1,4 @@
-resource "aws_instane" "myInstance" {
+resource "aws_instance" "myInstance" {
     ami ="ami-02b64aa047cb5edf5"
     region = "us-east-1"
     instance_type ="t3.micro"
