@@ -9,7 +9,7 @@ terraform {
         bucket ="venkatasaivinay-s3-bucket"
         encrypt = true
         key    = "testing/terraform.tfstate"
-        use_lock_file = true
+        use_lockfile = true
     }
 }
 
