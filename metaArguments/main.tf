@@ -12,6 +12,8 @@ resource "aws_instance" "myInstance" {
     }
 
     tags=var.tags
+
+    depends_on = aws_s3_bucket.myBucket
 }
 
 resource "aws_s3_bucket" "myBucket" {
