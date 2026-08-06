@@ -9,3 +9,11 @@ variable "buckets" {
     type =set(string)
     default = ["bucket-1","bucket-2"]
 }
+
+variable "tags" {
+    description = "tags for instances"
+    type = map(string)
+    default = {
+      "Name" = "terrafrmInstances"
+    }
+}

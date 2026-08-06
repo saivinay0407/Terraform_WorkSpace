@@ -4,12 +4,14 @@
 
 resource "aws_instance" "myInstance" {
     count = length(var.instanes)
-    ami= ""
+    ami= "0bdc7d025135d7b49"
     instance_type= "t3.micro"
     key_name= "aws_login"
     root_block_device {
         volume_size = 8
     }
+
+    tags=var.tags
 }
 
 resource "aws_s3_bucket" "myBucket" {
